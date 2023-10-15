@@ -1,6 +1,8 @@
 import "./globals.css";
 
 import Header from "./components/Header";
+import { OpeningHero } from "./components/OpeningHero";
+import { Specials } from "./components/Specials";
 
 export default function RootLayout({
   children,
@@ -11,7 +13,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={""}>
         <Header />
-        {children}
+        <div className="h-screen">
+          <OpeningHero />
+          <Specials/>
+        </div>
       </body>
     </html>
   );
