@@ -2,8 +2,8 @@ import Image from "next/image";
 export function Specials() {
   return (
     <div>
-      <div className="flex flex-row justify-center h-1/2 w-ful">
-        <div className="flex flex-col">
+      <div className="flex flex-row justify-between mx-10 h-1/2 w-ful">
+        <div className="special">
           <div>
             <Image
               src={"/misc/chillBG.png"}
@@ -13,37 +13,37 @@ export function Specials() {
               alt=""
             />
           </div>
-          <div className="flex flex-row bg-brownOrange">
+          <div className="specialBanner bg-brownOrange">
             <h3>Burger & Combo Specials</h3>
             <button className="roundBtn">arrow</button>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="special">
           <div>
             <Image
-              src={"/misc/chillBG.png"}
+              src={"/misc/ringsBasket.png"}
               // TDL- want to figure out what needs to happen for fill
               width={200}
               height={200}
               alt=""
             />
           </div>
-          <div className="flex flex-row bg-brownOrange">
+          <div className="specialBanner bg-blue1">
             <h3>Burger & Combo Specials</h3>
             <button className="roundBtn">arrow</button>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="special">
           <div>
             <Image
-              src={"/misc/chillBG.png"}
+              src={"/misc/pancakesBG.png"}
               // TDL- want to figure out what needs to happen for fill
               width={200}
               height={200}
               alt=""
             />
           </div>
-          <div className="flex flex-row bg-brownOrange">
+          <div className="specialBanner bg-orange">
             <h3>Burger & Combo Specials</h3>
             <button className="roundBtn">arrow</button>
           </div>
