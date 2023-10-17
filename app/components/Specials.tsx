@@ -2,8 +2,8 @@ import Image from "next/image";
 export function Specials() {
   return (
     <div>
-      <div className="flex flex-row justify-between mx-10 h-1/2 w-ful">
-        <div className="special">
+      <div className="hero justify-between mb-20">
+        <div className="special mx-5">
           <div>
             <Image
               src={"/misc/chillBG.png"}
@@ -18,7 +18,7 @@ export function Specials() {
             <button className="roundBtn">arrow</button>
           </div>
         </div>
-        <div className="special">
+        <div className="special mx-5">
           <div>
             <Image
               src={"/misc/ringsBasket.png"}
@@ -33,7 +33,7 @@ export function Specials() {
             <button className="roundBtn">arrow</button>
           </div>
         </div>
-        <div className="special">
+        <div className="special mx-5">
           <div>
             <Image
               src={"/misc/pancakesBG.png"}
