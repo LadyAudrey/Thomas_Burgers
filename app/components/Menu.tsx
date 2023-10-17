@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { MenuItem } from "./MenuItem";
 
-export default function Menu() {
+export function Menu() {
   return (
     <div className="hero">
       <div className="special">
@@ -16,91 +17,15 @@ export default function Menu() {
         <h2>Order now!</h2>
       </div>
       <div className="special">
-        <div className="special items-center bg-orange h-1/3 w-full">
-          <div>
-            <Image
-              src={"/misc/chillNoBG.png"}
-              // TDL- want to figure out what needs to happen for fill
-              width={50}
-              height={50}
-              alt=""
-            />
-          </div>
-          <button>Burgers</button>
-        </div>
-        <div className="special w-full items-center bg-blue1 h-1/3">
-          <div>
-            <div>
-              <Image
-                src={"/misc/sodaNoBG.png"}
-                // TDL- want to figure out what needs to happen for fill
-                width={50}
-                height={50}
-                alt=""
-              />
-            </div>
-            <button>Drinks</button>
-          </div>
-        </div>
-        <div className="special w-full items-center bg-blue-2 h-1/3">
-          <div>
-            <div>
-              <Image
-                src={"/misc/friesNoBG.png"}
-                // TDL- want to figure out what needs to happen for fill
-                width={50}
-                height={50}
-                alt=""
-              />
-            </div>
-            <button>Side Orders</button>
-          </div>
-        </div>
+        {/* TDL- need to figure out how to pass tailwind colors as props */}
+        <MenuItem picture={"/misc/chillNoBG.png"} name={"Burgers"} color={"orange"}/>
+        <MenuItem picture={"/misc/sodaNoBG.png"} name={"Drinks"}  color={"brownOrange"} />
+        <MenuItem picture={"/misc/friesNoBG.png"} name={"Side Orders"}  color={"blue1"}/>
       </div>
-      <div className="special bg-darkBrown">
-        <div className="special items-center bg-offWhite h-1/3 w-full">
-          <div className="special items-center bg-orange h-1/3 w-full">
-            <div>
-              <Image
-                src={"/misc/ComboNoBG.png"}
-                // TDL- want to figure out what needs to happen for fill
-                width={50}
-                height={50}
-                alt=""
-              />
-            </div>
-            <button>Combos</button>
-          </div>
-          <div className="special w-full items-center bg-blue1 h-1/3">
-            <div>
-              <div>
-                <Image
-                  src={"/misc/sodaNoBG.png"}
-                  // TDL- want to figure out what needs to happen for fill
-                  width={50}
-                  height={50}
-                  alt=""
-                />
-              </div>
-              <button>Drinks</button>
-            </div>
-          </div>
-          <div className="special w-full items-center bg-blue-2 h-1/3">
-            <div>
-              <div>
-                <Image
-                  src={"/misc/friesNoBG.png"}
-                  // TDL- want to figure out what needs to happen for fill
-                  width={50}
-                  height={50}
-                  alt=""
-                />
-              </div>
-              <button>Side Orders</button>
-            </div>
-            b
-          </div>
-        </div>
+      <div className="special">
+        <MenuItem picture={"/misc/ComboNoBG.png"} name={"Combos"} />
+        <MenuItem picture={"/misc/PancakesNoBG.png"} name={"Breakfast"}  color={"blue1"}/>
+        <MenuItem picture={"/misc/nuggetsNoBG.png"} name={"Kids Menu"}  color={"orange"}/>
       </div>
     </div>
   );

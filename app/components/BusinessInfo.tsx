@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function BusinessInfo() {
+export function BusinessInfo() {
   return (
     <div className="hero p-20 bg-darkBrown text-offWhite">
       <div className="info">
@@ -12,8 +12,8 @@ export default function BusinessInfo() {
           <p>Mon - Friday 8:00 AM - 10:00 PM</p>
           <p>Sat - Sunday 8:00 AM - 10:00 PM</p>
         </div>
-        <div className="flex flex-row justify">
-          <button>Get In Touch</button>
+        <div className="flex flex-row justify-around">
+          <button className="bg-orange roundBtn">Get In Touch</button>
           <div>
             <h4>Social Media Links</h4>
           </div>

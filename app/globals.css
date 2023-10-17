@@ -6,6 +6,7 @@
     h3{
         @apply font-semibold
     }
+    /* TDL needs height-half to work */
     .hero{
         @apply flex flex-row h-1/2 w-screen
     }
