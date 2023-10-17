@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Header() {
   return (
     <>
-      <header className="flex flex-row justify-between bg-pink">
+      <header className="flex flex-row justify-between bg-orange">
         <div className="flex flex-row justify-around w-1/2">
           <button>Menu</button>
           <button>Specials</button>
