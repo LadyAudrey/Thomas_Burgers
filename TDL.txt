@@ -1,0 +1,17 @@
+TDL
+-- Add Tailwind (complete!)
+-- Download/ store photos (complete!)
+-- Create Tailwind units
+-- -- info flex
+-- -- default photo settings
+-- -- Menu items
+-- -- Special items
+-- -- special item footer
+-- Create HeaderInfo Component
+-- Create Hero
+-- Create Combo Component
+-- Create Menu Component
+-- Create ContactInfo Component
+-- Create Footer with photos Component
+-- Hook up links to go where they should
+-- Clarify about components connecting with onClick to something else?
