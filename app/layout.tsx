@@ -7,8 +7,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Thomas Burgers",
-  description: "Restaurant Static Website",
+  title: "Thomas Burger",
+  description: "Homepage for Thomas Burger of LA",
 };
 
 import Header from "./components/Header";
