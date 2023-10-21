@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function BusinessInfo() {
   return (
@@ -13,9 +14,20 @@ export function BusinessInfo() {
           <p>Sat - Sunday 8:00 AM - 10:00 PM</p>
         </div>
         <div className="flex flex-row justify-around">
-          <button className="bg-orange roundBtn">Get In Touch</button>
-          <div>
-            <h4>Social Media Links</h4>
+          <Link href="#">
+            {" "}
+            <button className="bg-orange roundBtn m-5">Get In Touch</button>
+          </Link>
+          <div className="flex flex-row bg-brownOrange">
+            <Link href="#">
+              <Image src="/misc/burgerCloseUp.png" height={50} width={50} alt="FB" />
+            </Link>
+            <Link href="#">
+              <Image src="/misc/burgerCloseUp.png" height={50} width={50} alt="IG" />
+            </Link>
+            <Link href="#">
+              <Image src="/misc/burgerCloseUp.png" height={50} width={50} alt="LI" />
+            </Link>
           </div>
         </div>
       </div>

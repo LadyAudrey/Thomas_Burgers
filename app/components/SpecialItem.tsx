@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function SpecialItem(props) {
-    console.log(props)
+  console.log(props);
   const { picture, title } = props;
   return (
     <div className="special mx-5">
@@ -16,8 +17,10 @@ export function SpecialItem(props) {
       </div>
       <div className="specialBanner bg-brownOrange">
         <h3>{title}</h3>
-        {/* TDL- make svg work */}
-        <button className="roundBtn bg-['misc/Arrow.svg')]">Arrow</button>
+        {/* TDL- make svg work and accept props of links*/}
+        <Link href="#">
+          <button className="roundBtn bg-['misc/Arrow.svg')]">Arrow</button>
+        </Link>
       </div>
     </div>
   );
