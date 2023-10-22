@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Homepage for Thomas Burger of LA",
 };
 
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 
 export default function RootLayout({
   children,

@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { MobileHeader } from "./MobileHeader"
 
 export default function Header() {
   return (
     <>
-      <header className="flex flex-row justify-between bg-orange">
-        <div className="flex flex-row justify-around items-center w-1/2">
+      <header className="sm:flex justify-between hidden bg-orange">
+        <div className="flex justify-around items-center w-1/2">
           <Link href="#">
             {" "}
             <button>Menu</button>
@@ -34,6 +35,7 @@ export default function Header() {
           </div>
         </div>
       </header>
+      <MobileHeader />
     </>
   );
 }
