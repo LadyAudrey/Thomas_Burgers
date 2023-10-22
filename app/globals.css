@@ -8,7 +8,7 @@
     }
     /* TDL needs height-half to work */
     .hero{
-        @apply flex flex-row h-1/2 w-screen
+        @apply flex flex-row
     }
     .info
     {
@@ -18,7 +18,7 @@
         @apply py-2 px-5 rounded-full
     }
     .special{
-        @apply flex flex-col w-1/3
+        @apply flex flex-col
     }
     .specialBanner{
         @apply flex flex-row rounded-b-lg

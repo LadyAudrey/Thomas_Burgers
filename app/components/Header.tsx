@@ -5,20 +5,29 @@ export default function Header() {
   return (
     <>
       <header className="flex flex-row justify-between bg-orange">
-        <div className="flex flex-row justify-around w-1/2">
-          <button>Menu</button>
-          <button>Specials</button>
-          <button>Location</button>
+        <div className="flex flex-row justify-around items-center w-1/2">
+          <Link href="#">
+            {" "}
+            <button>Menu</button>
+          </Link>
+          <Link href="#">
+            {" "}
+            <button>Specials</button>
+          </Link>
+          <Link href="#">
+            {" "}
+            <button>Location</button>
+          </Link>
         </div>
         <div className="flex flex-row justify-center w-1/2">
           <button>Start Order Here!</button>
-          <div className="h-1/4 w-1/4 mx-6">
-            <Link href="#">
+          <div className="mx-6">
+            <Link href="#" className="h-1/4 w-1/4">
               <Image
                 src={"/misc/chillNoBG.png"}
                 // TDL- want to figure out what needs to happen for fill
-                width={50}
                 height={50}
+                width={50}
                 alt="hamburger"
               />
             </Link>
