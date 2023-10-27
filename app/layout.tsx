@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Homepage for Thomas Burger of LA",
 };
 
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 
 export default function RootLayout({
   children,
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={""}>
+      <body className={"max-w-[1280px] mx-auto"}>
         <Header />
         {children}
       </body>

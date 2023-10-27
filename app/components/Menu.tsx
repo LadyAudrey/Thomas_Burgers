@@ -3,7 +3,7 @@ import { MenuItem } from "./MenuItem";
 
 export function Menu() {
   return (
-    <div className="hero">
+    <div className="hero" id="menu">
       <div className="special">
         <div>
           <Image
@@ -18,14 +18,34 @@ export function Menu() {
       </div>
       <div className="special">
         {/* TDL- need to figure out how to pass tailwind colors as props */}
-        <MenuItem picture={"/misc/chillNoBG.png"} name={"Burgers"} color={"orange"}/>
-        <MenuItem picture={"/misc/sodaNoBG.png"} name={"Drinks"}  color={"brownOrange"} />
-        <MenuItem picture={"/misc/friesNoBG.png"} name={"Side Orders"}  color={"blue1"}/>
+        <MenuItem
+          picture={"/misc/chillNoBG.png"}
+          name={"Burgers"}
+          color={"orange"}
+        />
+        <MenuItem
+          picture={"/misc/sodaNoBG.png"}
+          name={"Drinks"}
+          color={"brownOrange"}
+        />
+        <MenuItem
+          picture={"/misc/friesNoBG.png"}
+          name={"Side Orders"}
+          color={"blue1"}
+        />
       </div>
       <div className="special">
         <MenuItem picture={"/misc/ComboNoBG.png"} name={"Combos"} />
-        <MenuItem picture={"/misc/PancakesNoBG.png"} name={"Breakfast"}  color={"blue1"}/>
-        <MenuItem picture={"/misc/nuggetsNoBG.png"} name={"Kids Menu"}  color={"orange"}/>
+        <MenuItem
+          picture={"/misc/PancakesNoBG.png"}
+          name={"Breakfast"}
+          color={"blue1"}
+        />
+        <MenuItem
+          picture={"/misc/nuggetsNoBG.png"}
+          name={"Kids Menu"}
+          color={"orange"}
+        />
       </div>
     </div>
   );
