@@ -7,15 +7,13 @@ import { Eyecandy } from "./components/Eyecandy";
 import Image from "next/image";
 
 export default function Home() {
- creating-feature-header
   return (
     <div className="h-full w-screen">
-      <OpeningHero />
+      {/* <OpeningHero />
       <Specials />
       <Menu />
       <BusinessInfo />
-      <Eyecandy />
+      <Eyecandy /> */}
     </div>
   );
-
 }
