@@ -1,4 +1,6 @@
 "use client";
+import styles from "./MobileHeader.module.css";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,8 +12,8 @@ export function MobileHeader() {
     setNavOpen(!navOpen);
   }
   return (
-    <header className="flex justify-between items-center sm:hidden bg-orange">
-      <div className="flex items-center gap-2">
+    <header className="flex justify-between items-center h-16 sm:hidden bg-orange">
+      <div className="flex items-center gap-2 ps-2">
         <Image
           src={"/misc/chillNoBG.png"}
           height={50}
@@ -19,7 +21,7 @@ export function MobileHeader() {
           alt="hamburger"
           className="h-auto"
         />
-        <h1>Thomas Burger</h1>
+        <h1 className="text-2xl">Thomas Burger</h1>
       </div>
       <div onClick={toggleNav}>
         {navOpen ? (
@@ -36,20 +38,6 @@ export function MobileHeader() {
               <line x1="18" y1="6" x2="6" y2="18" />
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
-            <div className="absolute flex flex-col top-20 right-5">
-              <Link href="#">
-                {" "}
-                <button>Menu</button>
-              </Link>
-              <Link href="#">
-                {" "}
-                <button>Specials</button>
-              </Link>
-              <Link href="#">
-                {" "}
-                <button>Location</button>
-              </Link>
-            </div>
           </div>
         ) : (
           <svg
@@ -66,6 +54,26 @@ export function MobileHeader() {
             <line x1="16" y1="18" x2="0" y2="18" />
           </svg>
         )}
+        <nav
+          className={`absolute flex flex-col gap-2 bg-orange top-16 right-0 ${
+            styles.dropdownMenu
+          } motion-reduce:transition-none overflow-hidden ${
+            navOpen ? "h-32 p-3" : "h-0 p-0"
+          }`}
+        >
+          <Link href="#menu">
+            {" "}
+            <button className="underline">Menu</button>
+          </Link>
+          <Link href="#specials">
+            {" "}
+            <button className="underline">Specials</button>
+          </Link>
+          <Link href="#location">
+            {" "}
+            <button className="underline">Location</button>
+          </Link>
+        </nav>
       </div>
     </header>
   );

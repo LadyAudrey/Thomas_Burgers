@@ -1,21 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MobileHeader } from "./MobileHeader"
+import { MobileHeader } from "./MobileHeader";
 
 export default function Header() {
   return (
     <>
       <header className="sm:flex justify-between hidden bg-orange">
         <div className="flex justify-around items-center w-1/2">
-          <Link href="#">
+          <Link href="#menu">
             {" "}
             <button>Menu</button>
           </Link>
-          <Link href="#">
+          <Link href="#specials">
             {" "}
             <button>Specials</button>
           </Link>
-          <Link href="#">
+          <Link href="#location">
             {" "}
             <button>Location</button>
           </Link>
