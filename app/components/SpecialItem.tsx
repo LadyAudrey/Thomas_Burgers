@@ -1,8 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function SpecialItem(props) {
-  console.log(props);
+type SpecialItem = {
+  picture: string;
+  title: string;
+};
+
+export function SpecialItem(props: SpecialItem) {
   const { picture, title } = props;
   return (
     <div className="special mx-5">
