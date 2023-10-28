@@ -13,9 +13,12 @@ export function OpeningHero() {
           alt=""
         />
       </div>
-      <div className="flex flex-col  items-center justify-center sm:w-1/2 bg-blue1">
-        <div className="flex flex-col  items-center">
-          <h1 className="text-6xl text-center">Thomas Burger</h1>
+      <div className="flex flex-col items-center justify-center sm:w-1/2 bg-blue1">
+        <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center">
+            <h1 className="text-6xl text-center">Thomas Burger</h1>
+            <img src="/misc/YellowStripe.svg" className="w-1/2" />
+          </div>
           <Link href="#">
             <h3 className="my-4">Ready to Order?</h3>
           </Link>

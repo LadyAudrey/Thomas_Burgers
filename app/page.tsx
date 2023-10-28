@@ -9,8 +9,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="h-full w-screen">
-      {/* <OpeningHero />
-      <Specials />
+      <OpeningHero />
+      {/* <Specials />
       <Menu />
       <BusinessInfo />
       <Eyecandy /> */}
