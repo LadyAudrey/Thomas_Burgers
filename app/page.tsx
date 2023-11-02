@@ -10,9 +10,12 @@ export default function Home() {
   return (
     <div className="h-full w-screen">
       <OpeningHero />
+      {/*
+      <Specials />
       <Menu />
       <BusinessInfo />
-      <Eyecandy /> */}
+      <Eyecandy />
+      */}
     </div>
   );
 }
