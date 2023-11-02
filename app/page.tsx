@@ -8,12 +8,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="h-full w-screen">
-      {/* <OpeningHero />
+    <div className="h-full w-full">
+      <OpeningHero />
+      {/*
       <Specials />
       <Menu />
       <BusinessInfo />
-      <Eyecandy /> */}
+      <Eyecandy />
+      */}
     </div>
   );
 }
