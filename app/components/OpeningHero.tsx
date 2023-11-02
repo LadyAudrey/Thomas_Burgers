@@ -4,26 +4,24 @@ import Link from "next/link";
 export function OpeningHero() {
   return (
     <div className="hero flex flex-col sm:flex-row w-full">
-      <div className="flex justify-center sm:w-1/2 bg-lightBrown">
+      <div className="flex justify-center sm:w-1/2 h-[600px] bg-lightBrown">
         <Image
           src={"/misc/flyingBurger.png"}
           // TDL- want to figure out what needs to happen for fill
-          width={200}
-          height={200}
+          height={550}
+          width={400}
           alt=""
         />
       </div>
-      <div className="flex flex-col items-center justify-center sm:w-1/2 bg-blue1">
+      <div className="flex flex-col items-center justify-center sm:w-1/2 py-10 bg-blue1">
         <div className="flex flex-col items-center">
-          <div className="flex flex-col items-center">
-            <h1 className="text-6xl text-center">Thomas Burger</h1>
-            <img src="/misc/YellowStripe.svg" className="w-1/2" />
-          </div>
-          <Link href="#">
-            <h3 className="my-4">Ready to Order?</h3>
-          </Link>
-          <button className="bg-orange roundBtn m-5">Order Now!</button>
+          <h1 className="text-6xl text-center">Thomas Burger</h1>
+          <img src="/misc/YellowStripe.svg" className="w-1/2" />
         </div>
+        <Link href="#">
+          <h3 className="my-4">Ready to Order?</h3>
+        </Link>
+        <button className="bg-orange roundBtn m-5">Order Now!</button>
       </div>
     </div>
   );
