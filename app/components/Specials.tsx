@@ -5,7 +5,7 @@ import { SpecialItem } from "./SpecialItem";
 export function Specials() {
   return (
     <div>
-      <div className="hero justify-between my-20">
+      <div id="specials" className="hero justify-between my-20">
         <SpecialItem
           picture={"/misc/chillBG.png"}
           title={"Burger & Combo Specials"}
