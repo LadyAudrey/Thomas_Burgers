@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="w-screen bg-white">
       <body className="max-w-[1280px] mx-auto">
         <Header />
         {children}
