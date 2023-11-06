@@ -9,7 +9,7 @@ type SpecialItem = {
 export function SpecialItem(props: SpecialItem) {
   const { picture, title } = props;
   return (
-    <div className="special h-96 w-96">
+    <div className="flex flex-col h-96 w-96">
       <img
         src={picture}
         // TDL- want to figure out what needs to happen for fill
