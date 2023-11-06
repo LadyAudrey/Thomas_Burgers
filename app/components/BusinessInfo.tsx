@@ -20,13 +20,28 @@ export function BusinessInfo() {
           </Link>
           <div className="flex flex-row bg-brownOrange">
             <Link href="#">
-              <Image src="/misc/burgerCloseUp.png" height={50} width={50} alt="FB" />
+              <Image
+                src="/images/burgerCloseUp.png"
+                height={50}
+                width={50}
+                alt="FB"
+              />
             </Link>
             <Link href="#">
-              <Image src="/misc/burgerCloseUp.png" height={50} width={50} alt="IG" />
+              <Image
+                src="/images/burgerCloseUp.png"
+                height={50}
+                width={50}
+                alt="IG"
+              />
             </Link>
             <Link href="#">
-              <Image src="/misc/burgerCloseUp.png" height={50} width={50} alt="LI" />
+              <Image
+                src="/images/burgerCloseUp.png"
+                height={50}
+                width={50}
+                alt="LI"
+              />
             </Link>
           </div>
         </div>

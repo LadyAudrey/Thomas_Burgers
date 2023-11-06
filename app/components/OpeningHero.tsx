@@ -6,7 +6,7 @@ export function OpeningHero() {
     <div className="hero flex flex-col sm:flex-row w-full">
       <div className="flex justify-center h-[600px] w-full bg-lightBrown">
         <Image
-          src={"/misc/flyingBurger.png"}
+          src={"/images/flyingBurger.png"}
           // TDL- want to figure out what needs to happen for fill
           height={550}
           width={400}
@@ -17,7 +17,7 @@ export function OpeningHero() {
       <div className="flex flex-col items-center justify-center w-full py-10 bg-blue1">
         <div className="flex flex-col items-center">
           <h1 className="text-6xl text-center">Thomas Burger</h1>
-          <img src="/misc/YellowStripe.svg" className="w-1/2" />
+          <img src="/images/YellowStripe.svg" className="w-1/2" />
         </div>
         <Link href="#">
           <h3 className="my-4">Ready to Order?</h3>
