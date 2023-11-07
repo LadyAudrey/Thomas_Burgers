@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export function BusinessInfo() {
   return (
-    <div className="hero p-20 bg-darkBrown text-offWhite">
-      <div className="info">
+    <div className="flex p-20 bg-darkBrown text-offWhite">
+      <div className="flex flex-col h-1/2 w-1/2">
         <h2 className="text-3xl">Thomas Burger</h2>
         <p>Location: 12125 Navy St LA CA 90066</p>
       </div>
-      <div className="info">
+      <div className="flex flex-col h-1/2 w-1/2">
         <div>
           <p>Mon - Friday 8:00 AM - 10:00 PM</p>
           <p>Sat - Sunday 8:00 AM - 10:00 PM</p>
@@ -20,13 +20,28 @@ export function BusinessInfo() {
           </Link>
           <div className="flex flex-row bg-brownOrange">
             <Link href="#">
-              <Image src="/misc/burgerCloseUp.png" height={50} width={50} alt="FB" />
+              <Image
+                src="/images/burgerCloseUp.png"
+                height={50}
+                width={50}
+                alt="FB"
+              />
             </Link>
             <Link href="#">
-              <Image src="/misc/burgerCloseUp.png" height={50} width={50} alt="IG" />
+              <Image
+                src="/images/burgerCloseUp.png"
+                height={50}
+                width={50}
+                alt="IG"
+              />
             </Link>
             <Link href="#">
-              <Image src="/misc/burgerCloseUp.png" height={50} width={50} alt="LI" />
+              <Image
+                src="/images/burgerCloseUp.png"
+                height={50}
+                width={50}
+                alt="LI"
+              />
             </Link>
           </div>
         </div>

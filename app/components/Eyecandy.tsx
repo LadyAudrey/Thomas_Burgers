@@ -5,7 +5,7 @@ export function Eyecandy() {
     <div className="flex flex-row justify-between h-auto w-screen bg-darkBrown">
       <div>
         <Image
-          src={"/misc/burgerCloseUp.png"}
+          src={"/images/burgerCloseUp.png"}
           // TDL- want to figure out what needs to happen for fill
           width={900}
           height={900}
@@ -14,7 +14,7 @@ export function Eyecandy() {
       </div>
       <div>
         <Image
-          src={"/misc/chillBG.png"}
+          src={"/images/chillBG.png"}
           // TDL- want to figure out what needs to happen for fill
           width={900}
           height={900}
@@ -23,7 +23,7 @@ export function Eyecandy() {
       </div>
       <div>
         <Image
-          src={"/misc/ringsBasket.png"}
+          src={"/images/ringsBasket.png"}
           // TDL- want to figure out what needs to happen for fill
           width={900}
           height={900}
@@ -32,7 +32,7 @@ export function Eyecandy() {
       </div>
       <div>
         <Image
-          src={"/misc/pancakesBG.png"}
+          src={"/images/pancakesBG.png"}
           // TDL- want to figure out what needs to happen for fill
           width={900}
           height={900}

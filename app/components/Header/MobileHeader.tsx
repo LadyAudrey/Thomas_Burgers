@@ -15,7 +15,7 @@ export function MobileHeader() {
     <header className="flex justify-between items-center h-16 sm:hidden bg-orange">
       <div className="flex items-center gap-2 ps-2">
         <Image
-          src={"/misc/chillNoBG.png"}
+          src={"/images/chillNoBG.png"}
           height={50}
           width={50}
           alt="hamburger"

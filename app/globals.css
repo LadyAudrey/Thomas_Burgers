@@ -3,24 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-    h3{
-        @apply font-semibold
-    }
-    /* TDL needs height-half to work */
-    .hero{
-        @apply flex flex-row
-    }
-    .info
-    {
-        @apply flex flex-col h-1/2 w-1/2
-    }
-    .roundBtn{
-        @apply py-2 px-5 rounded-full
-    }
-    .special{
-        @apply flex flex-col
-    }
-    .specialBanner{
-        @apply flex flex-row rounded-b-lg
-    }
+  h3 {
+    @apply font-semibold;
+  }
+  /* TDL needs height-half to work */
+  .roundBtn {
+    @apply py-2 px-5 rounded-full;
+  }
 }

@@ -25,7 +25,7 @@ export default function Header() {
           <div className="mx-6">
             <Link href="#" className="h-1/4 w-1/4">
               <Image
-                src={"/misc/chillNoBG.png"}
+                src={"/images/chillNoBG.png"}
                 // TDL- want to figure out what needs to happen for fill
                 height={50}
                 width={50}
