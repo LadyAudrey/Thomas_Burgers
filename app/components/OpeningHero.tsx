@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function OpeningHero() {
   return (
-    <div className="hero flex flex-col sm:flex-row w-full">
+    <div className="flex flex-col sm:flex-row w-full">
       <div className="flex justify-center h-[600px] w-full bg-lightBrown">
         <Image
           src={"/images/flyingBurger.png"}

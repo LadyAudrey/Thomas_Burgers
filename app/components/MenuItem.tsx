@@ -12,7 +12,7 @@ export function MenuItem(props: MenuItemProps) {
   const { picture, name, color, alt } = props;
   return (
     <div style={{ backgroundColor: color ?? "" }}>
-      <div className="special items-center h-1/3 w-full">
+      <div className="flex flex-col items-center h-1/3 w-full">
         <Link href="#">
           <div>
             <Image

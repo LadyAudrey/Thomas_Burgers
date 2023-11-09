@@ -3,8 +3,8 @@ import { MenuItem } from "./MenuItem";
 
 export function Menu() {
   return (
-    <div className="hero" id="menu">
-      <div className="special">
+    <div className="flex" id="menu">
+      <div className="flex flex-col">
         <div>
           <Image
             src={"/images/chillBG.png"}
@@ -16,7 +16,7 @@ export function Menu() {
         </div>
         <h2>Order now!</h2>
       </div>
-      <div className="special">
+      <div className="flex flex-col">
         {/* TDL- need to figure out how to pass tailwind colors as props */}
         <MenuItem
           picture={"/images/chillNoBG.png"}
@@ -34,7 +34,7 @@ export function Menu() {
           color={"blue1"}
         />
       </div>
-      <div className="special">
+      <div className="flex flex-col">
         <MenuItem picture={"/images/ComboNoBG.png"} name={"Combos"} />
         <MenuItem
           picture={"/images/PancakesNoBG.png"}
