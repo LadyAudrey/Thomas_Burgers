@@ -9,23 +9,23 @@ type MenuItemProps = {
 };
 
 export function MenuItem(props: MenuItemProps) {
-  const { picture, name, color, alt } = props;
+  const { picture, name, color = "orange", alt } = props;
   return (
-    <div style={{ backgroundColor: color ?? "" }}>
-      <div className="flex flex-col items-center h-1/3 w-full">
-        <Link href="#">
-          <div>
-            <Image
-              src={picture}
-              // TDL- want to figure out what needs to happen for fill
-              width={50}
-              height={50}
-              alt={alt ?? ""}
-            />
-          </div>
-          <button>{name}</button>
-        </Link>
-      </div>
+    <div className={`w-full md:min-h-[250px] h-full bg-${color} py-5`}>
+      <Link
+        href="#"
+        className="flex flex-col items-center justify-center h-full w-full"
+      >
+        <Image
+          src={picture}
+          // TDL- want to figure out what needs to happen for fill
+          width={200}
+          height={200}
+          alt={alt ?? ""}
+          className="my-auto w-auto h-[162px]"
+        />
+        <h2 className="text-3xl font-medium">{name}</h2>
+      </Link>
     </div>
   );
 }
