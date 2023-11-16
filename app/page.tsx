@@ -12,8 +12,8 @@ export default function Home() {
       <OpeningHero />
       <Specials />
       <Menu />
-      {/* <BusinessInfo /> */}
-      {/* <Eyecandy /> */}
+      <BusinessInfo />
+      <Eyecandy />
     </div>
   );
 }
