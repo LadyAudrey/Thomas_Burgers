@@ -12,7 +12,7 @@ export default function Home() {
       <OpeningHero />
       <Specials />
       <Menu />
-      {/* <BusinessInfo /> */}
+      <BusinessInfo />
       {/* <Eyecandy /> */}
     </div>
   );
