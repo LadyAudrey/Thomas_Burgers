@@ -13,7 +13,7 @@ export default function Home() {
       <Specials />
       <Menu />
       <BusinessInfo />
-      {/* <Eyecandy /> */}
+      <Eyecandy />
     </div>
   );
 }
