@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Eyecandy() {
   return (
-    <div className="hidden sm:flex sm:justify-between sm:gap-4 sm:bg-darkBrown">
+    <div className="hidden md:flex justify-between gap-4 bg-darkBrown px-4 pb-4">
       <div>
         <Image
           src={"/images/burgerCloseUp.png"}
@@ -20,7 +20,7 @@ export function Eyecandy() {
           width={350}
           height={350}
           alt="hamburger"
-          className="h-full w-full overflow-hidden object-cover"
+          className="h-full w-full overflow-hidden object-cover hidden lg:block"
         />
       </div>
       <div>
