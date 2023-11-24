@@ -17,7 +17,13 @@ export function OpeningHero() {
       <div className="flex flex-col items-center justify-center w-full py-10 bg-blue1">
         <div className="flex flex-col items-center">
           <h1 className="text-6xl text-center">Thomas Burger</h1>
-          <img src="/images/YellowStripe.svg" className="w-1/2" />
+          <Image
+            src="/images/YellowStripe.svg"
+            className="w-1/2"
+            width={249}
+            height={8}
+            alt=""
+          />
         </div>
         <Link href="#">
           <h3 className="my-4">Ready to Order?</h3>
